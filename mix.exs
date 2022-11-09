@@ -41,9 +41,8 @@ defmodule KodaiAdmin.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:comeonin, "~> 5.3"},
       {:bcrypt_elixir, "~> 3.0"},
-      {:guardian, "~> 2.3"},
+      {:guardian, "~> 1.0"},
       {:poison, "~> 5.0"}
     ]
   end

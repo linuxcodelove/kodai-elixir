@@ -7,5 +7,9 @@ defmodule KodaiAdminWeb.Router do
 
   scope "/api", KodaiAdminWeb do
     pipe_through :api
+    get("/users/new", UserController, :new)
+    get("/users", UserController, :list_users)
+    # session
+    post("/sessions/login", SessionController, :login)
   end
 end

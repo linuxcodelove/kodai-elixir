@@ -17,6 +17,11 @@ config :kodai_admin, KodaiAdminWeb.Endpoint,
   pubsub_server: KodaiAdmin.PubSub,
   live_view: [signing_salt: "qBiZiNyq"]
 
+# Configures the guardian
+config :kodai_admin, KodaiAdmin.Guardian,
+  issuer: "kodai_admin",
+  secret_key: "6QH6kxkDb72uF+51Hquoka/V4ONck9cOGowUEXg0TXtnLuunBfjTiSkc77WHrEJf"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

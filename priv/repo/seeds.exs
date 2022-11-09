@@ -9,3 +9,7 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias KodaiAdmin.Account
+
+Account.create_user(%{username: "admin", password: "123456"})

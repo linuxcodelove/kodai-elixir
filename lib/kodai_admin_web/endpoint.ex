@@ -40,5 +40,27 @@ defmodule KodaiAdminWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+
+  plug(CORSPlug,
+    headers: [
+      "Authorization",
+      "Content-Type",
+      "Accept",
+      "Origin",
+      "User-Agent",
+      "DNT",
+      "Cache-Control",
+      "X-Mx-ReqToken",
+      "Keep-Alive",
+      "X-Requested-With",
+      "If-Modified-Since",
+      "X-CSRF-Token",
+      "Client-Info",
+      "Company-Info",
+      "User-Info",
+      "SubDomain"
+    ]
+  )
+
   plug KodaiAdminWeb.Router
 end

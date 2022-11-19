@@ -43,7 +43,8 @@ defmodule KodaiAdmin.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:bcrypt_elixir, "~> 3.0"},
       {:guardian, "~> 1.0"},
-      {:poison, "~> 5.0"}
+      {:poison, "~> 5.0"},
+      {:cors_plug, "~> 3.0"}
     ]
   end
 

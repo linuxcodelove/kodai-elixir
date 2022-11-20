@@ -25,7 +25,7 @@ defmodule KodaiAdminWeb.CottageController do
     render(conn, "show.json", cottage: cottage)
   end
 
-  def update(conn, %{"id" => id, "cottage" => cottage_params}) do
+  def update(conn, %{"id" => id} = cottage_params) do
     cottage = Data.get_cottage!(id)
 
     with {:ok, %Cottage{} = cottage} <- Data.update_cottage(cottage, cottage_params) do
